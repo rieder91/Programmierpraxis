@@ -1,4 +1,4 @@
 Programmierpraxisbeispiele WS2011
 =================================
 
-Übungsbeispiele A01-A07 und Mustertest #2
+Beispiele A01-A07 und Mustertest #2
