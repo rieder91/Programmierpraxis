@@ -1,0 +1,185 @@
+import java.util.ArrayList;
+
+/**
+ * @author Thomas Rieder
+ * @matrikelnummer 1125403
+ * @date 2011-12-11
+ * @description 7. Übungsbeispiel
+ *   
+ */
+
+public class AsciiImage {
+	// Bild
+	private char[][] image;
+
+	// Breite und Höhe
+	private int width, height;
+	
+	// gueltige Zeichen
+	private String charset;
+
+	/**
+	 * Konstruktur mit der Größe des Bildes als Parameter
+	 * 
+	 * @param width
+	 *            Breite des Bildes
+	 * @param height
+	 *            Höhe des Bildes
+	 */
+	public AsciiImage(int width, int height, String charset) {
+		// auf 0 prüfen
+		if(width <= 0 || height <= 0 || charset.length() == 0) {
+			throw new IllegalArgumentException();
+		}
+		
+		// auf doppelte Zeichen prüfen
+		for(int i = 0; i < charset.length(); i++) {
+			for(int j = 0; j < charset.length(); j++) {
+				if(charset.charAt(i) == charset.charAt(j) && i != j) {
+					throw new IllegalArgumentException();
+				}
+			}
+		}
+		
+		this.charset = charset;
+		this.width = width;
+		this.height = height;
+		char background = charset.charAt(charset.length() - 1);
+		
+		image = new char[width][height];
+		for (int i = 0; i < width; i++) {
+			for (int j = 0; j < height; j++) {
+				image[i][j] = background;
+			}
+		}
+	}
+
+	/**
+	 * Kopierkonstruktor mit Deepcopy
+	 * 
+	 * @param img
+	 *            AsciiImage das kopiert wird
+	 */
+	public AsciiImage(AsciiImage img) {
+		this.charset = img.charset;
+		this.width = img.width;
+		this.height = img.height;
+		
+		image = new char[width][height];
+		for (int i = 0; i < width; i++) {
+			for (int j = 0; j < height; j++) {
+				image[i][j] = img.getPixel(i, j);
+			}
+		}
+	}
+	
+	/**
+	 * @return liefert das charset zurück
+	 */
+	public String getCharset() {
+		return charset;
+	}
+
+	/**
+	 * @return liefert die Breite zurück
+	 */
+	public int getWidth() {
+		return width;
+	}
+
+	/**
+	 * @return liefert die Hšhe zurück
+	 */
+	public int getHeight() {
+		return height;
+	}
+
+	/**
+	 * Ausgabe mittels überladener toString-Methode
+	 * 
+	 * @return Ausgabe des Bildes
+	 */
+	public String toString() {
+		String output = "";
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < width; j++) {
+				output += image[j][i];
+			}
+			output += '\n';
+		}
+		return output;
+	}
+
+	/**
+	 * liefert den Pixel an der Stelle (x, y)
+	 * 
+	 * @param x
+	 *            x-Koordinate
+	 * @param y
+	 *            y-Koordinate
+	 * @return character (x, y)
+	 */
+	public char getPixel(int x, int y) {
+		if(x >= width || y >= height) {
+			throw new IndexOutOfBoundsException();
+		}
+		return image[x][y];
+	}
+
+	/**
+	 * Setzt den Pixel an der Stelle (x, y)
+	 * 
+	 * @param x
+	 *            x-Koordinate
+	 * @param y
+	 *            y-Koordinate
+	 * @param c
+	 *            Replacement-Character
+	 */
+	public void setPixel(int x, int y, char c) {
+		if(x >= width || y >= height || charset.indexOf(c) == -1) {
+			throw new IndexOutOfBoundsException();
+		}
+		image[x][y] = c;
+	}
+
+	/**
+	 * Liefert den Wert des AsciiPoints p zurück
+	 * 
+	 * @param p
+	 *            AsciiPoint/Koordinaten
+	 * @return Wert als char
+	 */
+	public char getPixel(AsciiPoint p) {
+		return getPixel(p.getX(), p.getY());
+	}
+	
+	/**
+	 * Erzeugt eine Liste von AsciiPoints mit dem Zeichen c
+	 * @param c Zeichen von dem die Liste erstellt wird
+	 * @return Liste alle AsciiPoints die das Zeichen @param c besitzen
+	 */
+	public ArrayList<AsciiPoint> getPointList(char c) {
+		ArrayList<AsciiPoint> ret = new ArrayList<AsciiPoint>();
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < width; j++) {
+				if (image[j][i] == c) {
+					ret.add(new AsciiPoint(j, i));
+				}
+			}
+		}
+		return ret;
+	}
+
+	/**
+	 * Weist einem Pixel einen neuen Wert zu
+	 * 
+	 * @param p
+	 *            Pixel
+	 * @param c
+	 *            Zeichen
+	 */
+	public void setPixel(AsciiPoint p, char c) {
+		setPixel(p.getX(), p.getY(), c);
+	}
+}
