@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>PP - 3. Test</title>
+  
+  
+  <script type="text/javascript" src="res/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="res/jquery.scrollTo-min.js"></script>
+
+  <script type="text/javascript">
+    <!--
+  
+    $(document).ready(function(){
+      toggleClasses($("dl.class > dt > a"), 0);
+      toggleTestcases($("#testcaseToggler"), 0);
+    });
+    
+    function toggleClasses(element){
+      toggleClasses(element, 600);
+    }
+      
+    function toggleClasses(element, time){
+      $(element).parent().next('dd').slideToggle(time);
+      $(element).contents('.more').toggle();
+      $(element).contents('.less').toggle();
+    }
+    
+    function toggleTestcases(element, time){
+      $('div.iotop').toggle();
+      $(element).contents('.more').toggle();
+      $(element).contents('.less').toggle();
+    }
+  
+    -->
+  </script>
+  
+  
+  <style type="text/css">
+  <!--
+  
+  html,body {
+    margin : 0px;
+    padding-top : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-bottom : 0px;
+    background-color : #FFFFFF;
+    font-family : sans-serif;
+    text-align : center;
+    font-size:15px;
+    line-height: 1.3em;
+    }
+    
+  div#container {
+    max-width : 900px;
+    margin-right : auto;
+    margin-left : auto;
+    margin-top: 0px;
+    padding : 0px;
+    text-align : left;
+    position: relative;
+    background-color: #EEEEEE;
+    }
+    
+  div#index {
+    width: 146px;
+    position : fixed;
+    background-color: #FFFFFF;
+    border: 2px solid #555555;
+    -moz-border-radius:20px;
+    -khtml-border-radius:20px;
+    min-height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 70px;
+    margin-left: 10px;
+    top:0px;
+    }
+    
+  div#content {
+    background-color: white;
+    border: 2px solid #555555;
+    -moz-border-radius:20px;
+    -khtml-border-radius:20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    margin-bottom: 15px;
+    }
+    
+  div#test {
+    width: 220px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    float: left;
+    }
+    
+  div#title {
+    width: 680px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    }
+  
+  
+  div#header {
+    position : fixed;
+    background-image: url('res/header_gradient.png');
+    background-repeat: repeat-x;
+    height: 80px;
+    width: 900px;
+    top: 0px;
+    }
+  
+  h2{
+    margin-top: 40px;
+  }
+  
+  code {
+    line-height: 1.3em;
+    font-size: 15px !important;
+    }
+    
+  pre {
+    padding: 1em;
+    border: 1px dashed #2f6fab;
+    color: black;
+    background-color: #f9f9f9;
+    line-height: 1.1em;
+    overflow:auto;
+    }
+    
+  div.iosamplecontainer{
+    max-width:335px;
+  }
+    
+  pre.iosample{
+    font-size:12px;
+    /* overflow:hidden; */
+  }
+  
+  p.index{
+    margin-top:0px;
+    margin-bottom:10px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: blue;
+  }
+  
+  p.index a{
+    color: black;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  p.iodescription{
+    font-size:11px !important;
+  }
+  
+  p.info{
+    font-style: italic;
+  }
+  
+  img.tex{
+    max-width: 580px;
+    margin-left: 10px;
+  }
+  
+  table{
+    border-collapse: collapse;
+  }
+  
+  td{
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  img.more{
+    border: none;
+  }
+
+
+  img.less{
+    border: none;
+  }
+  
+  //-->
+  </style>
+  
+    
+</head>
+<body>
+  
+<div id="container">
+
+  
+    
+  <div style="display: table; width: 100%;">
+    <div style="display:table-row;">
+        
+      <div style="display: table-cell; width: 200px;">
+        
+        <div id="index">
+          <p class="index"><a onClick="$.scrollTo('#aufgabe1', {offset:{left:0, top:-75}, duration:600});return false;" href="#aufgabe1">1. Aufgabe: Typbeziehungen</a></p>
+          <p class="index"><a onClick="$.scrollTo('#aufgabe2', {offset:{left:0, top:-75}, duration:600});return false;" href="#aufgabe2">2. Aufgabe: Exception Handling</a></p>
+          <p class="index"><a onClick="$.scrollTo('#aufgabe3', {offset:{left:0, top:-75}, duration:600});return false;" href="#aufgabe3">3. Aufgabe: Rekursion und Collections</a></p>
+          <p class="index"><a onClick="$.scrollTo('#aufgabe4', {offset:{left:0, top:-75}, duration:600});return false;" href="#aufgabe4">4. Aufgabe: Vererbung und Konstruktoren</a></p>
+           <p class="index"><a onClick="$.scrollTo('#aufgabe5', {offset:{left:0, top:-75}, duration:600});return false;" href="#aufgabe5">5. Aufgabe: Fragen zum Abschluss</a></p>
+        </div>
+        <div id="header">
+        
+          <!-- UPDATE -->
+          <div id="test">PP, 3. Test</div>
+          <div id="title">Mustertest</div>
+        
+        </div>
+        
+      </div>
+      <div style="display: table-cell;">
+      
+        <div id="content"> 
+
+<p class="info">Sie finden zu jeder Aufgabe einen entsprechenden Unterordner im Verzeichnis "impl". Speichern Sie, wenn gefordert, in den entsprechenden Ordnern Ihre Lösungen ab. 
+</p>
+<ul>
+<li>Bitte lesen Sie die Angabe einer Teilaufgabe <b>komplett</b> durch, bevor Sie mit der Umsetzung beginnen.</li>
+<li>Halten Sie sich genau an die Angabe.</li>
+<li>Haben Sie <b>Schwierigkeiten</b> bei der Umsetzung einer der Teilaufgaben, <b>versuchen Sie andere Aufgaben zuerst zu lösen</b> und wenden Sie sich zuletzt nochmal der ungelösten Teilaufgabe zu. Sie erhalten auch Punkte für nicht vollständig gelöste Teilaufgaben</li>
+</ul>
+<hr style="margin-bottom:35px;"/>
+<!-- START INSERT -->
+
+<h2 id="aufgabe1">1. Aufgabe: Typbeziehungen</h2>
+<p>Für einen kleinen Zoo soll eine Verwaltungsapplikation entwickelt werden. Es gibt zwei grundsätzliche Arten von Tieren: Fleischfresser und Pflanzenfresser. Von einem Tier kann abgefragt werden, ob es Fleisch frisst oder nicht: <code>boolean eatsMeat()</code>. Weiters gibt es die Möglichkeit abzufragen, wieviel Kilogramm Futter ein Tier pro Tag benötigt: <code>double dailyFoodQuantity()</code>. <br />Bei den Fleischfressern wird zwischen Tigern (4kg Futter pro Tag) und Löwen (6kg Futter pro Tag) unterschieden. Bei den Pflanzenfressern gibt es Schafe (2kg Futter pro Tag) und Elefanten (10kg Futter pro Tag). 
+
+<ul>
+<li>Schreiben Sie entsprechende Klassen/Interfaces, achten Sie hierbei auf korrekte Typbeziehungen (Vererbung). <b>Vermeiden Sie dabei doppelten Code</b> und nutzen Sie Dateinamen ohne Umlaute. <p class="info">Erstellen Sie die entsprechenden Dateien im Verzeichnis "aufgabe1" und speichern Sie darin Ihre Implementierung. Kompilieren Sie diese um die korrekte Struktur des Programms zu testen. Sie können zum Testen bei Bedarf die ausführbare leere Klasse Zoo nutzen, ihr Inhalt wird nicht bewertet.</p></li>
+
+<li>Beschreiben Sie für jede der Entitäten (zum Beispiel Tiger, ...), wieso Sie für die Umsetzung eine Klasse/eine abstrakte Klasse/ein Interface gewählt haben. </li>
+</ul>
+</p>
+
+
+
+<h2 id="aufgabe2">2. Aufgabe: Exception Handling</h2>
+
+<p>Betrachten Sie den folgenden Ausschnitt aus einer Bank-Anwendung:</p>
+
+<pre>
+public class Bank{
+
+  ...
+  
+  private HashMap&lt;String, Account&gt; accounts;
+  
+  ...
+  
+  public void deleteAccount(String accountID) 
+      throws AccountIsDeleteProtectedException {
+      	
+    Account account = this.accounts.get(accountID);
+    
+    if(account.isProtected()) {
+      throw new AccountIsDeleteProtectedException();
+    }
+    
+    this.accounts.remove(accountID);
+    
+  }
+
+}
+
+public class BankManager {
+
+  public static void main(String[] args) {
+    
+    ...
+    
+    try {
+      bank.deleteAccount(accountID);
+    } catch(Exception e) {
+      System.out.println("Account is protected");
+    }
+    
+    ...
+    
+  }
+  
+}
+
+</pre>
+
+<p>Sie können davon ausgehen, dass alle benötigten Objekte (<code>bank, accounts, ...</code>) korrekt instanziert wurden, dass die <code>AccountIsDeleteProtectedException</code> eine korrekt implementierte Exception ist und dass alle notwendigen imports vorgenommen wurden.</p>
+
+<ul>
+<li>Beschreiben Sie, welche Probleme bei der hier vorgenommenen Exception-Behandlung in der <code>BankManager#main</code>-Methode auftreten können und wie diese behoben werden können. Überlegen Sie sich, welche Exceptions hier auftreten können. Beachten Sie besonders den Fall, dass der Account mit der spezifizierten ID in der HashMap nicht existiert.<br />
+<p class="info">Möchten Sie zur Lösung dieser Aufgabe interaktiv testen, finden Sie eine vollständige Implementierung des Beispiels im Verzeichnis "aufgabe2". Ihre Antwort soll die notwendigen Änderungen in textueller Form beschreiben, der Inhalt des Verzeichnis "aufgabe2" wird nicht bewertet.</li>
+</ul>
+
+
+
+<h2 id="aufgabe3">3. Aufgabe: Rekursion und Collections</h2>
+<p>Beim letzten Montags-Angebot haben Sie bei Ihrem lokalen Discounter ein Boxenset erstanden. Jede Box hat eine Farbe, die als String gespeichert wird. Mit der Methode <code>void insert(Box box)</code> kann eine Box in eine andere Box hineingelegt werden. In jeder Box kann direkt maximal eine andere Box enthalten sein, jedoch können Boxen ineinander verschachtelt werden (z.B.: in Box1 ist Box2, in Box2 ist Box3, etc.). Es ist außerdem möglich für eine Box zu bestimmen, welche die häufigst vorkommende Farbe unter den Boxen ist (hierbei wird die Box selbst und alle in ihr enthaltenen Boxen betrachtet). Nutzen Sie dazu die Methode <code>HashMap&lt;String, Integer&gt; getColorList()</code>, die für eine Box zurückgibt, welche Farbe wie oft vorkommt. Sie können davon ausgehen, dass es immer eine häufigst vorkommende Farbe gibt.
+
+<ul>
+<li>Implementieren Sie die beiden genannten Methoden in der Klasse Box. Die Methode <code>Box#getColorList</code> soll dabei <b>rekursiv implementiert</b> werden.
+<p class="info">Vervollständigen Sie die vorgegebene Klasse Box im Verzeichnis "aufgabe3". Nutzen Sie die mitgelieferte ausführbare Klasse BoxTester um Ihre Implementierung zu testen.</p>
+</li>
+</ul>
+</p>
+
+
+
+<h2 id="aufgabe4">4. Aufgabe: Vererbung und Konstruktoren</h2>
+
+<p>Betrachten Sie die folgenden zwei Klassen:</p>
+
+<pre>
+public class A {
+  public A() {
+    System.out.println("Klasse A");
+  }
+}
+
+public class B extends A {
+  public B() {
+    System.out.println("Klasse B");
+  }
+}
+</pre>
+
+<ul>
+<li> Welche Ausgabe erfolgt auf <code>System.out</code>, wenn ein neues Objekt der Klasse B mit <code>new B();</code> instanziert wird? Erklären Sie, wieso genau diese Ausgabe erfolgt. Welche Aufrufe erfolgen, warum und <b>in welcher Reihenfolge</b>?
+<p class="info">Zur Lösung der Aufgabe sollen Sie die Fragen in rein textueller Form beantworten, der Inhalt des Verzeichnis "aufgabe4" wird nicht bewertet. Sie können dort jedoch bei Bedarf Dateien zum Testen anlegen.</p>
+</li>
+</ul>
+
+
+
+<h2 id="aufgabe5">5. Aufgabe: Allgemeine Fragen</h2>
+
+<ul>
+<li>Welche Aufgabe erfüllt der finally-Block im try/catch-Konstrukt? Wann wird er ausgeführt?</li>
+<li>Nennen Sie zumindest eine Methode, die in der Basisklasse aller Java-Klassen definiert ist. Welche Rolle spielen in der Basisklasse definierte Methoden?</li>
+</ul>
+
+
+<!-- END INSERT -->
+        
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+  
+</body>
+</html>

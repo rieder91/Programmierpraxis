@@ -1,0 +1,36 @@
+Aufgabe 1
+
+Tier (interface)
+
+Fleisch-/Planzenfresser implementieren Tier
+Fleisch-/Pflanzenfresser sind abstract und haben die abstrakte Methode dailyFoodQuantity
+
+Tiger/Löwe erben von Fleischfressern
+
+Schafe/Elefanten erben von Pflanzenfressern
+
+
+Aufgabe 2
+
+Account ist null weil es die accountID nicht gibt:
+NullpointerException
+
+Alles andere ist ja korrekt instanziert und deshalb nicht null.
+
+
+Aufgabe 4
+
+Es wird zuerst der Konstruktor von A aufgefrufen (implizit, weil kein super im Konstruktor der Unterklasse ist) und danach der Konstruktor von B. Wenn es keinen passenden Konstruktor in A geben würde, würde eine Exception geworfen werden.
+
+Name des Prinzips: constructor chaining
+
+
+Aufgabe 5
+
+Alles im finally-Block wird immer ausgeführt, egal ob eine exception geworfen wird oder nicht.
+
+Alle Java-Klassen erben implizit von Object. 
+
+Methoden: zB toString(), clone()
+
+Alle Elemente der Basisklasse sind auch in den Unterklassen verfügbar.
