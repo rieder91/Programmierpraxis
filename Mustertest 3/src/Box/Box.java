@@ -68,19 +68,8 @@ public class Box {
 	 * @return Eine HashMap mit den Vorkommen der einzelnen Farben
 	 */
 	public HashMap<String, Integer> countColors() {
-		HashMap<String, Integer> ret;
-		if(this.content != null) {
-			ret = new HashMap<String, Integer>(content.countColors());
-		} else {
-			ret = new HashMap<String, Integer>();
-		}
-		if(ret.containsKey(color)) {
-			ret.put(color, ret.get(color)+1);
-		} else {
-			ret.put(color, 1);
-		}
+		HashMap<String, Integer> ret = new HashMap<String, Integer>(this.content != null ? content.countColors() : new HashMap<String, Integer>());
+		ret.put(color, ret.containsKey(color) ? ret.get(color) + 1 : 1);
 		return ret;
-		
 	}
-	
 }
