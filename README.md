@@ -12,9 +12,6 @@
  * Beispiele A10
      * noch nicht released  
   
-  
-  
-  
-  
-_Link zum Kurs:_  
+* * *
+### Link zum Kurs:  
 [Tosca Kurs vom Wintersemester 2011](http://tosca.inflab.tuwien.ac.at/eprip/?mode=pp "Tosca Kurs")
