@@ -13,5 +13,8 @@
      * noch nicht released  
   
   
-Link zum Kurs:  
-[Tosca Kurs für das Wintersemester 2011](http://tosca.inflab.tuwien.ac.at/eprip/?mode=pp "Tosca Kurs")
+  
+  
+  
+_Link zum Kurs:_  
+[Tosca Kurs vom Wintersemester 2011](http://tosca.inflab.tuwien.ac.at/eprip/?mode=pp "Tosca Kurs")
