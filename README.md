@@ -9,7 +9,7 @@
      * mit Theorie
 
 ### Ausstehend:
- * Beispiele A10
+ * Beispiel A10
      * noch nicht released  
   
 * * *
