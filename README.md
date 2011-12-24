@@ -8,7 +8,5 @@
  * Mustertest #3
      * mit Theorie
 
-### Ausstehend:  
- * Beispiel A10  
- 
- 
+### Fertig:
+ * Beispiele A01-A09
