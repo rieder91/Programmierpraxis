@@ -8,5 +8,10 @@
  * Mustertest #3
      * mit Theorie
 
-### Fertig:
- * Beispiele A01-A09
+### Ausstehend:
+ * Beispiele A10
+     * noch nicht released  
+  
+  
+Link zum Kurs:  
+[Tosca Kurs für das Wintersemester 2011](http://tosca.inflab.tuwien.ac.at/eprip/?mode=pp "Tosca Kurs")
