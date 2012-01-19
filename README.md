@@ -1,7 +1,7 @@
 # Programmierpraxisbeispiele WS2011
 
 ### Fertig:
- * Beispiele A01-A09
+ * Beispiele A01-A10
      * alle erreichen 100%
      * mit Bonus
  * Mustertest #2
@@ -9,8 +9,7 @@
      * mit Theorie
 
 ### Ausstehend:
- * Beispiel A10
-     * noch nicht released  
+ * nichts
   
 * * *
 ### Link zum Kurs:  
