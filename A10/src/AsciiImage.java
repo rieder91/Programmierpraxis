@@ -193,9 +193,21 @@ public class AsciiImage {
 	 * @return true falls gleich
 	 */
 	public boolean equals(Object c) {
+		if (c == null) {
+			return false;
+		}
+
+		if (c == this) {
+			return true;
+		}
+
+		if (c.getClass() != getClass()) {
+			return false;
+		}
+
 		AsciiImage comp = (AsciiImage) c;
 		boolean equal = (comp.getWidth() == width)
-				&& (comp.getHeight() == height);
+		&& (comp.getHeight() == height);
 
 		for (int i = 0; i < width && equal == true; i++) {
 			for (int j = 0; j < height && equal == true; j++) {
